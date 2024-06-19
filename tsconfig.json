@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // 将TypeScript编译为哪个版本的JavaScript
+    "module": "commonjs", // 使用CommonJS模块系统
+    "strict": true, // 启用所有严格类型检查选项
+    "esModuleInterop": true, // 允许对CommonJS和ES模块进行互操作
+    "outDir": "./dist", // 指定输出目录
+    "rootDir": "./src", // 指定输入文件的根目录
+    "baseUrl": ".", // 用于解析非相对模块名称的基目录
+    "paths": { // 模块路径映射
+      "*": [
+        "node_modules/*"
+      ]
+    },
+    "resolveJsonModule": true, // 允许从JSON文件中导入模块
+    "sourceMap": true, // 生成相应的 .map 文件
+    "noImplicitAny": true, // 在表达式和声明上有隐含的 any 类型时报错
+    "moduleResolution": "node", // 使用Node.js模块解析策略
+    "skipLibCheck": true, // 跳过对声明文件的类型检查
+    "forceConsistentCasingInFileNames": true // 禁止对同一文件使用大小写不同的引用
+  },
+  "include": [
+    "src"
+  ], // 包含的文件
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ] // 排除的文件
+}
