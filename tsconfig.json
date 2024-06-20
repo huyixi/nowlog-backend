@@ -20,7 +20,8 @@
     "forceConsistentCasingInFileNames": true // 禁止对同一文件使用大小写不同的引用
   },
   "include": [
-    "src"
+    "src/**/*.ts",
+    "tests/**/*.ts"
   ], // 包含的文件
   "exclude": [
     "node_modules",
